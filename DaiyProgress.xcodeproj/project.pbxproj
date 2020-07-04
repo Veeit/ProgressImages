@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		568DBAD024B0CD4100D73A03 /* AddGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DBACF24B0CD4100D73A03 /* AddGroup.swift */; };
+		568DBAD224B0D60800D73A03 /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DBAD124B0D60800D73A03 /* ImageDetail.swift */; };
 		5698CD6F24AD174F0037FB88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CD6E24AD174F0037FB88 /* AppDelegate.swift */; };
 		5698CD7124AD174F0037FB88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CD7024AD174F0037FB88 /* SceneDelegate.swift */; };
 		5698CD7424AD174F0037FB88 /* DaiyProgress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5698CD7224AD174F0037FB88 /* DaiyProgress.xcdatamodeld */; };
@@ -16,6 +18,11 @@
 		5698CD7E24AD174F0037FB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5698CD7C24AD174F0037FB88 /* LaunchScreen.storyboard */; };
 		5698CD8924AD17500037FB88 /* DaiyProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CD8824AD17500037FB88 /* DaiyProgressTests.swift */; };
 		5698CD9424AD17500037FB88 /* DaiyProgressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CD9324AD17500037FB88 /* DaiyProgressUITests.swift */; };
+		5698CDA324AD176B0037FB88 /* AddImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CDA224AD176B0037FB88 /* AddImage.swift */; };
+		5698CDA524AD179A0037FB88 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CDA424AD179A0037FB88 /* ImagePicker.swift */; };
+		5698CDA924AD184F0037FB88 /* GroupsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698CDA824AD184F0037FB88 /* GroupsList.swift */; };
+		56B148B224AD20C900D15D57 /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B148B124AD20C900D15D57 /* ImageList.swift */; };
+		56B148B624AD314A00D15D57 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B148B524AD314A00D15D57 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		568DBACF24B0CD4100D73A03 /* AddGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroup.swift; sourceTree = "<group>"; };
+		568DBAD124B0D60800D73A03 /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
 		5698CD6B24AD174F0037FB88 /* DaiyProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaiyProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698CD6E24AD174F0037FB88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5698CD7024AD174F0037FB88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +60,12 @@
 		5698CD8F24AD17500037FB88 /* DaiyProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiyProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698CD9324AD17500037FB88 /* DaiyProgressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiyProgressUITests.swift; sourceTree = "<group>"; };
 		5698CD9524AD17500037FB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5698CDA224AD176B0037FB88 /* AddImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImage.swift; sourceTree = "<group>"; };
+		5698CDA424AD179A0037FB88 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5698CDA824AD184F0037FB88 /* GroupsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsList.swift; sourceTree = "<group>"; };
+		56B148B124AD20C900D15D57 /* ImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
+		56B148B324AD314700D15D57 /* DaiyProgress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaiyProgress.entitlements; sourceTree = "<group>"; };
+		56B148B524AD314A00D15D57 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B148B624AD314A00D15D57 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				5698CD8724AD17500037FB88 /* DaiyProgressTests */,
 				5698CD9224AD17500037FB88 /* DaiyProgressUITests */,
 				5698CD6C24AD174F0037FB88 /* Products */,
+				56B148B424AD314A00D15D57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +118,10 @@
 		5698CD6D24AD174F0037FB88 /* DaiyProgress */ = {
 			isa = PBXGroup;
 			children = (
+				56B148B324AD314700D15D57 /* DaiyProgress.entitlements */,
+				5698CDA124AD175B0037FB88 /* View */,
 				5698CD6E24AD174F0037FB88 /* AppDelegate.swift */,
 				5698CD7024AD174F0037FB88 /* SceneDelegate.swift */,
-				5698CD7524AD174F0037FB88 /* ContentView.swift */,
 				5698CD7724AD174F0037FB88 /* Assets.xcassets */,
 				5698CD7C24AD174F0037FB88 /* LaunchScreen.storyboard */,
 				5698CD7F24AD174F0037FB88 /* Info.plist */,
@@ -137,6 +155,44 @@
 				5698CD9524AD17500037FB88 /* Info.plist */,
 			);
 			path = DaiyProgressUITests;
+			sourceTree = "<group>";
+		};
+		5698CDA124AD175B0037FB88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5698CD7524AD174F0037FB88 /* ContentView.swift */,
+				5698CDA724AD180B0037FB88 /* Main */,
+				5698CDA624AD18010037FB88 /* Warper */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5698CDA624AD18010037FB88 /* Warper */ = {
+			isa = PBXGroup;
+			children = (
+				5698CDA424AD179A0037FB88 /* ImagePicker.swift */,
+			);
+			path = Warper;
+			sourceTree = "<group>";
+		};
+		5698CDA724AD180B0037FB88 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5698CDA224AD176B0037FB88 /* AddImage.swift */,
+				5698CDA824AD184F0037FB88 /* GroupsList.swift */,
+				56B148B124AD20C900D15D57 /* ImageList.swift */,
+				568DBACF24B0CD4100D73A03 /* AddGroup.swift */,
+				568DBAD124B0D60800D73A03 /* ImageDetail.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		56B148B424AD314A00D15D57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56B148B524AD314A00D15D57 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5698CD6F24AD174F0037FB88 /* AppDelegate.swift in Sources */,
+				56B148B224AD20C900D15D57 /* ImageList.swift in Sources */,
+				5698CDA924AD184F0037FB88 /* GroupsList.swift in Sources */,
+				568DBAD024B0CD4100D73A03 /* AddGroup.swift in Sources */,
+				568DBAD224B0D60800D73A03 /* ImageDetail.swift in Sources */,
+				5698CDA324AD176B0037FB88 /* AddImage.swift in Sources */,
 				5698CD7124AD174F0037FB88 /* SceneDelegate.swift in Sources */,
+				5698CDA524AD179A0037FB88 /* ImagePicker.swift in Sources */,
 				5698CD7624AD174F0037FB88 /* ContentView.swift in Sources */,
 				5698CD7424AD174F0037FB88 /* DaiyProgress.xcdatamodeld in Sources */,
 			);
@@ -440,11 +502,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DaiyProgress/DaiyProgress.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DaiyProgress/Preview Content\"";
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DaiyProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,11 +525,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DaiyProgress/DaiyProgress.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DaiyProgress/Preview Content\"";
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DaiyProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				INFOPLIST_FILE = DaiyProgressTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,7 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				INFOPLIST_FILE = DaiyProgressTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,6 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				INFOPLIST_FILE = DaiyProgressUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPD69GC7T;
 				INFOPLIST_FILE = DaiyProgressUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

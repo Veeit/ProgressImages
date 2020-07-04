@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17162" systemVersion="20A4299v" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CategoriesEntities" representedClassName="CategoriesEntities" syncable="YES" codeGenerationType="class">
+        <attribute name="groupID" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GroupEntities" representedClassName="GroupEntities" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="groupImage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImageEntities" inverseName="imageGroup" inverseEntity="ImageEntities"/>
+    </entity>
+    <entity name="ImageEntities" representedClassName="ImageEntities" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="groupId" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <relationship name="imageGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupEntities" inverseName="groupImage" inverseEntity="GroupEntities"/>
+    </entity>
+    <entity name="ImageRateing" representedClassName="ImageRateing" syncable="YES" codeGenerationType="class">
+        <attribute name="categorieId" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageId" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="GroupEntities" positionX="-45" positionY="0" width="128" height="74"/>
+        <element name="ImageEntities" positionX="311.1265869140625" positionY="-5.94940185546875" width="128" height="134"/>
+        <element name="CategoriesEntities" positionX="153" positionY="63" width="128" height="74"/>
+        <element name="ImageRateing" positionX="162" positionY="81" width="128" height="89"/>
+    </elements>
 </model>
